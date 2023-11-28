@@ -6,6 +6,8 @@
 }
 
 @import "partials/colors";
+@import "partials/header";
+
 body {
     font-family: 'Sora',Arial, Helvetica, sans-serif;
     width: 100%;
@@ -15,5 +17,19 @@ body {
 }
 
 button {
+    font-family: 'Sora', sans-serif;
+    cursor: pointer;
+}
+
+svg {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
     cursor: pointer;
 }
