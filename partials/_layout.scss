@@ -244,4 +244,67 @@
     
 }
 
+// === footer =====
 
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 0;
+    gap: 24px;
+    color: $white-normal;
+}
+
+.footer nav ul {
+    display: flex;
+}
+
+// ---------------------------------------
+
+//  ===== botao whatsapp =======
+
+.btn-whatsapp {
+    position: fixed;
+    bottom: 14px;
+    right: 24px;
+    z-index: 999;
+
+    img{
+        max-width: 74px;
+        transition: .5s;
+    }
+
+    img:hover {
+        transform: scale(1.2);
+    }
+}
+
+.btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px;
+    top: 8px;
+    left: -140px;
+    padding: 4px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: $black-normal;
+    color: $white-normal;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+    .btn-whatsapp {
+        img {
+            max-width: 54px;
+        }
+    }
+}
